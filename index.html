@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register for Full Stack Conf</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+    
+    <header>
+      <span>Register for</span>
+      <h1>Full Stack Conf</h1>
+    </header>
+
+    <form action="index.html" method="post">
+              
+      <fieldset>         
+        <legend>Basic Info</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user-name" value="">
+        
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user-email">
+        
+        <label for="title">Job Role</label>
+        <select id="title" name="user-title">
+          <option value="">Please, select a job role</option>
+          <option value="full-stack js developer">Full Stack JavaScript Developer</option>
+          <option value="front-end developer">Front End Developer</option>
+          <option value="back-end developer">Back End Developer</option>
+          <option value="designer">Designer</option>          
+          <option value="student">Student</option>
+          <option value="other">Other</option>  
+        </select>
+        <input type="text" id="other-title" name="other" placeholder="Your Job Role">           
+      </fieldset>
+      
+      <fieldset class="shirt">
+        <legend>T-Shirt Info</legend>
+        <div>
+          <label for="size">Size:</label>
+          <select id="size" name="user-size">
+            <option value="small">S</option>
+            <option value="medium" selected>M</option>
+            <option value="large">L</option>
+            <option value="extra large">XL</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="design">Design:</label>
+          <select id="design" name="user-design">
+            <option value="">Select Theme</option>
+            <option value="JS Puns">Theme - JS Puns</option>
+            <option value="I &#9829; JS">Theme - I &#9829; JS</option>
+          </select>
+        </div>
+
+        <div id="colors-js-puns" class="">
+          <label for="color">Color:</label>
+          <select id="color">
+            <option value="">Please, select a T-shirt color theme</option>
+            <option value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>
+            <option value="darkslategrey">Dark Slate Grey (JS Puns shirt only)</option> 
+            <option value="gold">Gold (JS Puns shirt only)</option> 
+            <option value="tomato">Tomato (I &#9829; JS shirt only)</option>
+            <option value="steelblue">Steel Blue (I &#9829; JS shirt only)</option> 
+            <option value="dimgrey">Dim Grey (I &#9829; JS shirt only)</option> 
+          </select>
+        </div>                
+      </fieldset>
+
+      <fieldset  class="activities">
+        <legend>Register for Activities</legend>
+        <label>
+          <input type="checkbox" name="all" data-cost="$200"> Main Conference — $200
+        </label>
+        <label>
+          <input type="checkbox" name="js-frameworks" data-day-and-time="Tuesday-T09:00:00-T12:00:00" data-cost="$100"> 
+          JavaScript Frameworks Workshop — Tuesday 9am-12pm, $100
+        </label>
+        <label>
+          <input type="checkbox" name="js-libs" data-day-and-time="Tuesday-T13:00:00-T16:00:00" data-cost="$100"> 
+          JavaScript Libraries Workshop — Tuesday 1pm-4pm, $100
+        </label>
+        <label>
+          <input type="checkbox" name="express" data-day-and-time="Tuesday-T09:00:00-T12:00:00" data-cost="$100"> 
+          Express Workshop — Tuesday 9am-12pm, $100
+        </label>
+        <label>
+          <input type="checkbox" name="node" data-day-and-time="Tuesday-T13:00:00-T16:00:00" data-cost="$100"> 
+          Node.js Workshop — Tuesday 1pm-4pm, $100
+        </label>          
+        <label>
+          <input type="checkbox" name="build-tools" data-day-and-time="Wednesday-T09:00:00-T12:00:00" data-cost="$100"> 
+          Build tools Workshop — Wednesday 9am-12pm, $100
+        </label>
+        <label>
+          <input type="checkbox" name="npm" data-day-and-time="Wednesday-T13:00:00-T16:00:00" data-cost="$100"> 
+          npm Workshop — Wednesday 1pm-4pm, $100
+        </label>
+                  	
+      </fieldset>
+      <fieldset>
+        <legend>Payment Info</legend>
+
+        <label for="payment">I'm going to pay with:</label>
+        <select id="payment" name="user-payment">
+          <option value="">Select Payment Method</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="PayPal">PayPal</option>
+          <option value="Bitcoin">Bitcoin</option>
+        </select>
+
+        <div id="credit-card" class="credit-card" >
+
+          <div class="col-6 col">
+            <label for="cc-num">Card Number:</label>
+        	  <input id="cc-num" name="user-cc-num" type="text">
+          </div>
+
+          <div class="col-3 col">
+            <label for="zip">Zip Code:</label>
+            <input id="zip" name="user-zip" type="text"> 
+          </div>
+
+          <div class="col-3 col">
+            <label for="cvv">CVV:</label>
+            <input id="cvv" name="user-cvv" type="text"> 
+          </div>
+
+          <label for="exp-month">Expiration Date:</label>
+          <select id="exp-month" name="user-exp-month">
+            <option value="">Month</option>
+            <option value="1">1 - January</option>
+            <option value="2">2 - February</option>
+            <option value="3">3 - March</option>
+            <option value="4">4 - April</option>
+            <option value="5">5 - May</option>
+            <option value="6">6 - June</option>
+            <option value="7">7 - July</option>
+            <option value="8">8 - August</option>
+            <option value="9">9 - September</option>
+            <option value="10">10 - October</option>
+            <option value="11">11 - November</option>	
+            <option value="12">12 - December</option>          		          
+          </select>
+          <label for="exp-year">Expiration Year:</label>
+          <select id="exp-year" name="user-exp-year">
+            <option value="">Year</option>
+            <option value="2016">2019</option>
+            <option value="2017">2020</option>
+            <option value="2018">2021</option>
+            <option value="2019">2022</option>
+            <option value="2020">2023</option>        		          
+          </select> 	                  	         
+        </div>
+
+        <div id="paypal" class="paypal">
+        	<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
+        </div> 
+
+        <div id="bitcoin" class="bitcoin">
+        	<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
+        </div>                  
+
+      </fieldset>        
+        
+      <button type="submit">Register</button>
+      
+    </form>
+
+	</div>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
